@@ -89,6 +89,7 @@ const StyledHeader = styled.header`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100px;
   }
   @media (max-width: 767px) {
     .navbar-brand {
@@ -218,8 +219,8 @@ export function Menu({
           }
         `}
       />
-      <Row>
-        <Col md={16} xs={24}>
+      <Row align="middle">
+        <Col md={16} xs={24} className="navbar-menu">
           <a className="navbar-brand" href={brand.path}>
             <img width={brand.width} src={brand.icon} alt={brand.alt} />
           </a>
